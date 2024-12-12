@@ -1,0 +1,7 @@
+{
+  "name": "appSalazar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
