@@ -1,3 +1,48 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Menú lateral (slider) -->
+  <ion-menu content-id="main-content" side="start" menu-id="student-menu" *ngIf="showHeader">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menú Estudiante</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/dashboard">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <ion-item routerLink="/materias">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Materias</ion-label>
+        </ion-item>
+        <ion-item routerLink="/calificaciones">
+          <ion-icon name="clipboard-outline" slot="start"></ion-icon>
+          <ion-label>Calificaciones</ion-label>
+        </ion-item>
+        <ion-item routerLink="/tareas">
+          <ion-icon name="document-outline" slot="start"></ion-icon>
+          <ion-label>Tareas y Actividades</ion-label>
+        </ion-item>
+        <ion-item routerLink="/notificaciones">
+          <ion-icon name="notifications-outline" slot="start"></ion-icon>
+          <ion-label>Notificaciones</ion-label>
+        </ion-item>
+        <ion-item routerLink="/perfil">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-item>
+        <ion-item (click)="logout()">
+          <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          <ion-label>Cerrar Sesión</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Header principal (condicionado) -->
+  <app-header *ngIf="showHeader"></app-header>
+
+  <!-- Contenedor principal -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

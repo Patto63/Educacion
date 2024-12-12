@@ -1,0 +1,17 @@
+ion-menu {
+    --background: #ffffff; /* Fondo blanco */
+  }
+  
+  ion-toolbar {
+    --background: #007bff; /* Color primario */
+    --color: #ffffff; /* Texto blanco */
+  }
+  
+  ion-item {
+    --color: #333; /* Texto gris */
+  }
+  
+  ion-item:hover {
+    --background: #f0f0f0; /* Fondo claro al pasar el mouse */
+  }
+  

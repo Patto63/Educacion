@@ -1,0 +1,20 @@
+ion-toolbar {
+    --background: #6200ea; /* Cambia el color de fondo si deseas */
+    --color: #fff; /* Texto blanco */
+  }
+  
+  ion-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  ion-button {
+    --background: transparent;
+    --color: #fff;
+    --border-radius: 50%;
+  }
+  
+  ion-icon {
+    font-size: 1.2rem;
+  }
+  
